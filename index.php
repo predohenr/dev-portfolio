@@ -14,6 +14,9 @@
     <!-- More about -->
     <?php include 'pages/about.php'; ?>
 
+    <!-- Academic section -->
+    <?php include 'pages/academic.php'; ?>
+
     <!-- Skills section -->
     <?php include 'pages/skills.php'; ?>
 
