@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedro Lopes | Engenheiro de Software</title>
+    <meta
+      name="description"
+      content="Pedro Lopes — desenvolvedor full-stack e mestrando em Ciência da Computação no CIn-UFPE, pesquisando fluxos de trabalho com Git e ferramentas de merge."
+    />
+    <meta name="author" content="Pedro Henrique Lopes dos Santos" />
+    <meta property="og:title" content="Pedro Lopes | Engenheiro de Software" />
+    <meta
+      property="og:description"
+      content="Desenvolvedor full-stack e mestrando no CIn-UFPE. Pesquisa em fluxos de trabalho com Git e ferramentas de merge."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#F1EADF" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#181513" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <script>
+      // Aplica o tema antes do React montar, para não piscar.
+      try {
+        var saved = localStorage.getItem('theme')
+        var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches
+        document.documentElement.dataset.theme = dark ? 'dark' : 'light'
+      } catch (e) {
+        document.documentElement.dataset.theme = 'light'
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
