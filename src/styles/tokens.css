@@ -1,0 +1,80 @@
+/* ─────────────────────────────────────────────
+   Paleta "Cariri × Recife"
+   barro (terracota) + sol (ocre) + maré (azul profundo)
+   ───────────────────────────────────────────── */
+:root,
+[data-theme='light'] {
+  --bg: #f1eadf;
+  --bg-elev: #faf6ef;
+  --bg-sunk: #e8dfd1;
+  --ink: #1e2628;
+  --ink-soft: #4e5856;
+  --ink-faint: #7a817e;
+  --line: #d9cebe;
+  --line-strong: #c4b7a4;
+
+  --terra: #bf5a30;
+  --terra-ink: #9e4522; /* terracota para texto (contraste AA) */
+  --terra-btn: #b14f27;
+  --terra-btn-hover: #9e4522;
+  --terra-soft: #f0d8c9;
+  --on-terra: #fff8f0;
+
+  --mare: #15404e; /* azul-maré escuro — texto de destaque */
+  --mare-line: #1f5566;
+  --mare-soft: #d5e1e0;
+
+  --ocre: #d6a03c;
+  --ocre-ink: #7d5a14;
+  --ocre-soft: #f0ddb5;
+
+  --shadow: 0 1px 0 rgba(30, 38, 40, 0.04), 0 10px 30px -18px rgba(92, 52, 25, 0.35);
+  --shadow-lift: 0 1px 0 rgba(30, 38, 40, 0.04), 0 22px 40px -22px rgba(92, 52, 25, 0.45);
+  --grain-opacity: 0.32;
+  --grain-blend: multiply;
+  color-scheme: light;
+}
+
+[data-theme='dark'] {
+  --bg: #181513;
+  --bg-elev: #221e1b;
+  --bg-sunk: #12100e;
+  --ink: #efe7da;
+  --ink-soft: #b9b0a3;
+  --ink-faint: #8a8278;
+  --line: #342e29;
+  --line-strong: #4a423b;
+
+  --terra: #e0784a;
+  --terra-ink: #ec9366;
+  --terra-btn: #e0784a;
+  --terra-btn-hover: #ec9366;
+  --terra-soft: #3b2419;
+  --on-terra: #181513;
+
+  --mare: #8cc3cf;
+  --mare-line: #6aa7b5;
+  --mare-soft: #1b3036;
+
+  --ocre: #e2b45a;
+  --ocre-ink: #e9c47a;
+  --ocre-soft: #3a2e17;
+
+  --shadow: 0 1px 0 rgba(0, 0, 0, 0.3), 0 12px 30px -18px rgba(0, 0, 0, 0.7);
+  --shadow-lift: 0 1px 0 rgba(0, 0, 0, 0.3), 0 22px 40px -20px rgba(0, 0, 0, 0.8);
+  --grain-opacity: 0.12;
+  --grain-blend: screen;
+  color-scheme: dark;
+}
+
+:root {
+  --font-display: 'Fraunces Variable', 'Georgia', serif;
+  --font-sans: 'DM Sans Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, 'Cascadia Code', monospace;
+
+  --sidebar-w: 272px;
+  --content-w: 960px;
+  --radius: 14px;
+  --radius-sm: 8px;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
